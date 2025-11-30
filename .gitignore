@@ -1,0 +1,111 @@
+# ===============================
+# Python
+# ===============================
+__pycache__/
+*.py[cod]
+*.pkl
+*.db
+*.sqlite3
+
+# Virtual environments
+env/
+venv/
+.venv/
+ENV/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# ===============================
+# Environment / Secrets
+# ===============================
+.env
+.env.*
+*.env
+secrets.json
+credentials.json
+token.json
+service-account.json
+google_api_key.txt
+
+# Google Cloud service account keys
+*.key.json
+
+# ===============================
+# Jupyter / Colab
+# ===============================
+.ipynb_checkpoints/
+*.ipynb
+# Comment above if you want notebooks committed
+
+# Colab specific
+*.ipynb-proj/
+*.ipynb-safe/
+
+# ===============================
+# Logs
+# ===============================
+*.log
+logs/
+*.out
+
+# ===============================
+# OS / Editor Files
+# ===============================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# VSCode
+.vscode/
+.code-workspace
+
+# JetBrains IDEs (PyCharm)
+.idea/
+
+# ===============================
+# Node (Optional, if UI later)
+# ===============================
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+.pnpm-store/
+
+# ===============================
+# Cache / Temp files
+# ===============================
+.cache/
+*.cache
+*.tmp
+*.bak
+
+# ===============================
+# Packaging
+# ===============================
+*.tar.gz
+*.zip
+
+# ===============================
+# Docker
+# ===============================
+docker-build/
+*.docker
+*.img
+
+# ===============================
+# Cloud / Infra
+# ===============================
+.gcloud/
+.cloudbuild/
+.cloud/
+terraform.tfstate*
+terraform.tfstate.*.backup
+
+# Vertex AI / ML Artifacts
+model/
+artifacts/
+staging/
