@@ -7,83 +7,52 @@
 
 ---
 <div align="center">
-🦉 TinyTutor - AI Kids Storytelling & Education Pipeline
+🦉 TinyTutor - Agentic AI Pipeline for Child-Friendly Educational Media
+</div>
+<div align="center">
+Kaggle × Google AI Agents Intensive Course - Capstone Project
 </div>
 
 <div align="center">
   <img src="logo.png" width="420" alt="TinyTutor Logo"/>
 </div>
 
-### 📖 Introduction
 
-**TinyTutor** is an agentic AI system that transforms any topic into **child-friendly educational audio or video**, explained as if teaching a 5-year-old.
+### 📖 Overview
 
-It was created during the **Kaggle × Google 5-Day AI Agents Intensive** as a capstone project, demonstrating how multi-agent AI pipelines can make learning playful, accessible, and engaging for children.
+**TinyTutor** is an agentic AI system that transforms any topic into **clear, emotionally safe, age-appropriate educational content** for young children.
 
-TinyTutor uses a coordinated set of AI agents to research topics, design educational narratives, generate TTS-ready scripts, and produce natural-sounding audio (and soon video).
+It demonstrates how a coordinated **multi-agent architecture** can perform research, pedagogical simplification, scriptwriting, safety review, and audio generation autonomously.
 
-### 🌟 About TinyTutor
-
-**TinyTutor** is an AI-powered pipeline designed to generate **children’s stories**, **educational scripts**, **narration-ready text**, and even **storyboards or simple videos** - all with a warm, gentle, picture-book feel.
-
-With a single prompt, TinyTutor produces:
-
-* 📝 A soft, age-appropriate narrative
-* 📚 A pedagogical interpretation
-* 🎙️ TTS-friendly narration script
-* 🎬 Optional storyboard or animated video
-* 🖼️ Supporting artwork for stories, lessons, or kids’ books
+Developed as part of the **Kaggle × Google 5-Day AI Agents Intensive Course**, TinyTutor explores how agentic systems can transform complex subjects into clear, engaging educational content for young learners.
 
 ---
 
-## 🌟 Features
+### 🌟 Motivation
+
+Children often encounter explanations that are too abstract or cognitively overwhelming. While LLMs can simplify text, generating *high-quality early-childhood educational material* requires:
+
+- Controlled vocabulary  
+- Emotional and content safety  
+- Age-appropriate pacing  
+- Clear analogies  
+- TTS-friendly language  
+- Consistent pedagogy  
+
+TinyTutor investigates whether a **role-specialized agentic pipeline** can meet those constraints reliably.
+
+---
 
 ### 🧩 Multi-Agent Architecture
 
-* **PedagogyAgent** - researches topics and produces extremely clear ELI5 explanations
-* **ScriptWriterAgent** - creates warm, natural, child-friendly audio-ready scripts
-* **ReviewerAgent** - ensures clarity, safety, and simplicity
-* **AudioWriterAgent** - converts scripts into friendly narration (MP3), using single-voice TTS
-* **VideoAgent** *(coming soon)* - generates simple animated videos
-
-### 🔧 Technology & Tooling
-
-* Built with **Google’s Agent Developer Kit (ADK)**
-* Powered by **Gemini** for reasoning, scriptwriting, and content generation
-* Uses **Google Cloud Text-to-Speech** (Journey & Neural2 voices)
-* Adds **memory**, **context engineering**, and **safety checks**
-* Integrated with **MCP tools** for extensibility
-* Includes logs, traces, evaluation, and **LLM-as-a-Judge** quality scoring
-* Deployable on **Vertex AI Agent Engine**
-
----
-
-## 🧠 System Flow
-
-1. **User provides a topic** (ex: “What are volcanoes?”)
-2. **PedagogyAgent** analyzes the topic and generates a kid-friendly explanation
-3. **ScriptWriterAgent** transforms the explanation into a soft, playful, TTS-ready story
-
-   * No markdown
-   * One narrator
-   * Natural spoken language
-4. **ReviewerAgent** checks for:
-
-   * misunderstandings
-   * safety issues
-   * age-appropriateness
-5. **AudioWriterAgent** produces natural narration using Google Cloud TTS
-6. *(coming soon)* **VideoAgent** converts the script + audio into simple animations
-7. Final content is displayed or downloaded for the user
-
-## 🧠 Pipeline Overview
+TinyTutor uses **multiple specialized agents**, each scoped for stability and predictable transformations.
 
 ### 1. **Pedagogy Agent**
 
 Defines age range, tone, learning intent, and story style.
 Ensures safe, simple, emotionally appropriate language.
 
-### 2. **ScriptWriter Agent**
+### 2. **Audio ScriptWriter Agent**
 
 Creates charming, storybook-style content:
 
@@ -93,7 +62,7 @@ Creates charming, storybook-style content:
 * Clear moral or learning purpose
 * Friendly characters
 
-### 3. **AudioWriter Agent**
+### 3. **Audio Generator Agent**
 
 Rewrites the story for **natural TTS delivery**:
 
@@ -103,13 +72,45 @@ Rewrites the story for **natural TTS delivery**:
 * Smooth, human flow
 * Warm emotional tone
 
-### 4. **VideoAgent (coming soon)**
+### 4. **Video Generator Agent (coming soon)**
 
 Produces storyboards or simple animated sequences to match the narrative.
 
 ---
 
-## 📂 Project Structure
+### 🔧 Technical Implementation
+
+* Built with **Google’s Agent Developer Kit (ADK)**
+* Powered by **Gemini** for reasoning, scriptwriting, and content generation
+* Uses **Google Cloud Text-to-Speech** (Journey & Neural2 voices)
+* Deployable on **Vertex AI Agent Engine**
+
+---
+
+### 🛠️ Key Design Principles
+- Explicit **role separation** between agents  
+- Structured message schemas for deterministic handoff  
+- Safety through redundancy (pedagogy → script → TTS)  
+
+---
+
+### 🧠 System Flow
+```
+User topic (ex: “What are volcanoes?”)
+   ↓
+PedagogyAgent  
+   ↓  (structured ELI5 explanation)
+AudioScriptWriterAgent  
+   ↓  (gentle narration)
+AudioGeneratorAgent  
+   ↓  (MP3/Audio output)
+VideoGeneratorAgent (in progress)
+   ↓
+Final media package
+```
+---
+
+### 📂 Project Structure
 
 ```
 .
@@ -117,9 +118,8 @@ Produces storyboards or simple animated sequences to match the narrative.
 │   ├── agents/
 │   │   ├── __init__.py
 │   │   ├── pedagogy_agent.py
-│   │   ├── scriptwriter_agent.py
-│   │   ├── reviewer_agent.py
-│   │   └── audio_writer_agent.py
+│   │   ├── audio_scriptwriter_agent.py
+│   │   └── audio_generator_agent.py
 │   └── config/
 │       ├── main.py
 │       └── requirements.txt
@@ -142,7 +142,7 @@ Produces storyboards or simple animated sequences to match the narrative.
 
 ---
 
-## 🔗 Useful Links (GitHub)
+### 🔗 Useful Links (GitHub)
 
 * [backend/agents/pedagogy_agent.py](https://github.com/angelatyk/tinytutor/blob/main/backend/agents/pedagogy_agent.py)
 * [backend/config/main.py](https://github.com/angelatyk/tinytutor/blob/main/backend/config/main.py)
@@ -153,12 +153,11 @@ Produces storyboards or simple animated sequences to match the narrative.
 * [notebooks/04_multi-agent_pipeline.ipynb](https://github.com/angelatyk/tinytutor/blob/main/notebooks/04_multi-agent_pipeline.ipynb)
 * [notebooks/05_evaluation_and_observability.ipynb](https://github.com/angelatyk/tinytutor/blob/main/notebooks/05_evaluation_and_observability.ipynb)
 * [notebooks/06_backend_api_prototyping.ipynb](https://github.com/angelatyk/tinytutor/blob/main/notebooks/06_backend_api_prototyping.ipynb)
-* [requirements.txt](https://github.com/angelatyk/tinytutor/blob/main/backend/config/requirements.txt)
 * [README.md](https://github.com/angelatyk/tinytutor/blob/main/README.md)
 
 ---
 
-## 🚀 Future Features
+### 🚀 Future Features
 
 * **Video Narration Pipeline**
 
@@ -177,24 +176,13 @@ Produces storyboards or simple animated sequences to match the narrative.
 
 ---
 
-## 🧩 How It Works
-
-1. You provide a theme or idea.
-2. The Pedagogy Agent builds an educational foundation.
-3. The ScriptWriter creates the story.
-4. The AudioWriter transforms it into natural TTS text.
-5. The VideoAgent generates frames or video.
-6. The final output becomes a complete kids’ content package.
-
----
-
-## 🚀 Getting Started
+### 🚀 Getting Started
 
 Clone the repository:
 
 ```
 git clone https://github.com/angelatyk/TinyTutor
-cd TinyTutor
+cd TinyTutor/backend
 ```
 
 Install dependencies:
@@ -206,45 +194,23 @@ pip install -r requirements.txt
 Run an example:
 
 ```
-python run_example.py
+python main.py
 ```
 
 ---
 
-## 📄 License
+### 📄 License
 
 MIT License - free for personal and commercial use.
 
 ---
 
-## 🦉 Final Notes
+### 👩‍💻 Authors
 
-TinyTutor is built to be **calm, gentle, and educational**, bringing the feeling of a cozy storybook into an AI-powered creative pipeline.
-
-If you want, I can also create:
-
-* Custom badges
-* More illustrations
-* Sample stories
-* A full Streamlit demo
-
----
-
-## 👩‍💻 Authors
-
-* **Angela Kwok**
-* **Carllos Watts-Nogueira**
+* **Angela Kwok** [@angelatyk](https://github.com/angelatyk)  
+* **Carllos Watts-Nogueira** [@cwattsnogueira](https://github.com/cwattsnogueira)  
 
 **Kaggle × Google – Agents Intensive (Capstone Project)**
 *Applying multi-agent AI systems to solve real-world challenges in education.*
 
 ---
-
-
-
-
-
-
-
-
-
