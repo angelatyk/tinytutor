@@ -193,7 +193,7 @@ Produces storyboards or simple animated sequences to match the narrative.
 Clone the repository:
 
 ```
-git clone https://github.com/YOUR_USER/TinyTutor
+git clone https://github.com/angelatyk/TinyTutor
 cd TinyTutor
 ```
 
@@ -213,7 +213,7 @@ python run_example.py
 
 ## 📄 License
 
-MIT License — free for personal and commercial use.
+MIT License - free for personal and commercial use.
 
 ---
 
