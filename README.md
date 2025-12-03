@@ -17,7 +17,6 @@ Kaggle × Google AI Agents Intensive Course - Capstone Project
   <img src="logo.png" width="420" alt="TinyTutor Logo"/>
 </div>
 
-
 ### 📖 Overview
 
 **TinyTutor** is an agentic AI system that transforms any topic into **clear, emotionally safe, age-appropriate educational content** for young children.
@@ -40,6 +39,13 @@ Children often encounter explanations that are too abstract or cognitively overw
 - Consistent pedagogy  
 
 TinyTutor investigates whether a **role-specialized agentic pipeline** can meet those constraints reliably.
+
+<div align="center">
+TinyTutor - Demo Screenshot
+</div>
+<div align="center">
+<img src="appworks.png" width="420" alt="TinyTutor Logo"/>
+</div>
 
 ---
 
