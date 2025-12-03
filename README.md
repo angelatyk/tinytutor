@@ -164,18 +164,13 @@ Produces storyboards or simple animated sequences to match the narrative.
 
 ---
 
-### 🔗 Useful Links (GitHub)
+###  YouTube demo + Hugging Face Spaces live app
 
-* [backend/agents/pedagogy_agent.py](https://github.com/angelatyk/tinytutor/blob/main/backend/agents/pedagogy_agent.py)
-* [backend/config/main.py](https://github.com/angelatyk/tinytutor/blob/main/backend/config/main.py)
-* [notebooks/00_master_demo.ipynb](https://github.com/angelatyk/tinytutor/blob/main/notebooks/00_master_demo.ipynb)
-* [notebooks/01_eli5_logic/](https://github.com/angelatyk/tinytutor/blob/main/notebooks/01_eli5_logic)
-* [notebooks/02_audio_generation_experiments.ipynb](https://github.com/angelatyk/tinytutor/blob/main/notebooks/02_audio_generation_experiments.ipynb)
-* [notebooks/03_video_generation_experiments.ipynb](https://github.com/angelatyk/tinytutor/blob/main/notebooks/03_video_generation_experiments.ipynb)
-* [notebooks/04_multi-agent_pipeline.ipynb](https://github.com/angelatyk/tinytutor/blob/main/notebooks/04_multi-agent_pipeline.ipynb)
-* [notebooks/05_evaluation_and_observability.ipynb](https://github.com/angelatyk/tinytutor/blob/main/notebooks/05_evaluation_and_observability.ipynb)
-* [notebooks/06_backend_api_prototyping.ipynb](https://github.com/angelatyk/tinytutor/blob/main/notebooks/06_backend_api_prototyping.ipynb)
-* [README.md](https://github.com/angelatyk/tinytutor/blob/main/README.md)
+[![YouTube Demo](https://img.shields.io/badge/YouTube-Demo-red?logo=youtube)](https://youtu.be/bAAcL3O1oQs) 
+[YouTube Demo](https://youtu.be/bAAcL3O1oQs)
+
+[![Hugging Face Spaces](https://img.shields.io/badge/Hugging%20Face-Live%20Demo-yellow?logo=huggingface)](https://huggingface.co/spaces/cwattsnogueira/tinytutor) 
+[Hugging Face Spaces](https://huggingface.co/spaces/cwattsnogueira/tinytutor)
 
 ---
 
@@ -234,16 +229,5 @@ MIT License - free for personal and commercial use.
 
 **Kaggle × Google – Agents Intensive (Capstone Project)**
 *Applying multi-agent AI systems to solve real-world challenges in education.*
-
----
-###  YouTube demo + Hugging Face Spaces live app
-
-[![YouTube Demo](https://img.shields.io/badge/YouTube-Demo-red?logo=youtube)](https://youtu.be/bAAcL3O1oQs) 
-[YouTube Demo](https://youtu.be/bAAcL3O1oQs)
-
-[![Hugging Face Spaces](https://img.shields.io/badge/Hugging%20Face-Live%20Demo-yellow?logo=huggingface)](https://huggingface.co/spaces/cwattsnogueira/tinytutor) 
-[Hugging Face Spaces](https://huggingface.co/spaces/cwattsnogueira/tinytutor)
-
-
 
 ---
