@@ -214,3 +214,8 @@ MIT License - free for personal and commercial use.
 *Applying multi-agent AI systems to solve real-world challenges in education.*
 
 ---
+###  YouTube demo + Hugging Face Spaces live app
+[![YouTube Demo](https://img.shields.io/badge/YouTube-Demo-red?logo=youtube)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+[![Hugging Face Spaces](https://img.shields.io/badge/Hugging%20Face-Live%20Demo-yellow?logo=huggingface)]((https://huggingface.co/spaces/cwattsnogueira/tinytutor))
+
+---
