@@ -57,28 +57,36 @@ TinyTutor uses **multiple specialized agents**, each scoped for stability and pr
 
 ### 1. **Pedagogy Agent**
 
-Defines age range, tone, learning intent, and story style.
-Ensures safe, simple, emotionally appropriate language.
+Simplifies any topic into a safe, age-appropriate “Explain Like I’m 5” foundation.
+
+* Defines the age range and learning intent
+* Chooses tone (gentle, friendly, emotionally safe)
+* Breaks complex ideas into simple, familiar concepts
+* Ensures correct-but-beginner-friendly explanations
+* Avoids fear-inducing, technical, or abstract language
+* Uses search tools when needed to verify accuracy
+* Produces a clean, structured base explanation for downstream agents
 
 ### 2. **Audio ScriptWriter Agent**
 
 Creates charming, storybook-style content:
 
-* Short sentences
-* Gentle narration
-* Repetition for memory
-* Clear moral or learning purpose
-* Friendly characters
+* Short, clear child-friendly sentences
+* Warm narration with gentle transitions
+* Repetition and imagery to support memory
+* Two natural curiosity-sparking questions
+* Familiar examples and simple metaphors
+* Avoids sound effects, dramatic repetition, and complex vocabulary
 
 ### 3. **Audio Generator Agent**
 
 Rewrites the story for **natural TTS delivery**:
 
-* No bullet points
-* No symbols that TTS reads awkwardly
-* No robotic phrasing
-* Smooth, human flow
-* Warm emotional tone
+* Removes bullets, symbols, and formatting TTS struggles with
+* Ensures smooth pacing and human-like flow
+* Eliminates robotic or repetitive phrasing
+* Keeps tone warm, calm, and emotionally engaging
+* Splits long text into TTS-safe chunks for stable audio generation
 
 ### 4. **Video Generator Agent (coming soon)**
 
