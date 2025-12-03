@@ -1,11 +1,13 @@
 # 🎓 TinyTutor - AI Agentic Educational Media Generator
 
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
-[![Google Cloud](https://img.shields.io/badge/Google%20Cloud-TTS%20%26%20Gemini-orange.svg)](https://cloud.google.com/)
-[![Colab](https://img.shields.io/badge/Google-Colab-yellow.svg)](https://colab.research.google.com/)
-[![Status](https://img.shields.io/badge/Project-Capstone-success.svg)]()
+<div align="center">
+  
+![Logo](https://skillicons.dev/icons?i=python,ai,gcp,vscode,github)
 
----
+</div>
+
+
+
 <div align="center">
 🦉 TinyTutor - Agentic AI Pipeline for Child-Friendly Educational Media
 </div>
