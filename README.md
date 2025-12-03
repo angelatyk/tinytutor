@@ -46,7 +46,7 @@ TinyTutor investigates whether a **role-specialized agentic pipeline** can meet 
 TinyTutor - Demo Screenshot
 </div>
 <div align="center">
-<img src="appworks.png" width="420" alt="TinyTutor Logo"/>
+<img src="screenapp.png" width="420" alt="TinyTutor Logo"/>
 </div>
 
 ---
