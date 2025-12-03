@@ -15,7 +15,7 @@ async def run_test():
     )
 
     print("\n=== Agent Response ===")
-    print(response)
+    print(response[0].content.parts[0].text)
 
 
 async def main():
