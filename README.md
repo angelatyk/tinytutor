@@ -1,4 +1,4 @@
-# 🎓 TinyTutor - Agentic AI–Powered Educational Media Generator
+# 🎓 TinyTutor - AI Agentic Educational Media Generator
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![Google Cloud](https://img.shields.io/badge/Google%20Cloud-TTS%20%26%20Gemini-orange.svg)](https://cloud.google.com/)
@@ -16,7 +16,6 @@ Kaggle × Google AI Agents Intensive Course - Capstone Project
 <div align="center">
   <img src="logo.png" width="420" alt="TinyTutor Logo"/>
 </div>
-
 
 ### 📖 Overview
 
@@ -40,6 +39,13 @@ Children often encounter explanations that are too abstract or cognitively overw
 - Consistent pedagogy  
 
 TinyTutor investigates whether a **role-specialized agentic pipeline** can meet those constraints reliably.
+
+<div align="center">
+TinyTutor - Demo Screenshot
+</div>
+<div align="center">
+<img src="appworks.png" width="420" alt="TinyTutor Logo"/>
+</div>
 
 ---
 
@@ -96,24 +102,17 @@ Produces storyboards or simple animated sequences to match the narrative.
 
 ### 🧠 System Flow
 ```
-           User topic (ex: “What are volcanoes?”)
-                            ↓
-                 ┌──────────────────────┐
-                 │   PedagogyAgent      │
-                 └──────────┬───────────┘
-                            │
-            ┌───────────────┴────────────────┐
-            │                                │
-┌──────────────────────────────┐  ┌──────────────────────────────┐
-│   AudioScriptWriterAgent     │  │   VideoScriptWriterAgent     │
-└───────────────┬──────────────┘  └──────────────┬───────────────┘
-                │                                │
-   ┌────────────▼─────────────┐     ┌────────────▼───────────────┐
-   │    AudioGeneratorAgent   │     │    VideoGeneratorAgent     │
-   └──────────────┬───────────┘     └──────────────┬─────────────┘
-                  └──────────────┬─────────────────┘
-                                 ▼
-                    Final Media Package
+User topic (ex: “What are volcanoes?”)
+   ↓
+PedagogyAgent  
+   ↓  (structured ELI5 explanation)
+AudioScriptWriterAgent  
+   ↓  (gentle narration)
+AudioGeneratorAgent  
+   ↓  (MP3/Audio output)
+VideoGeneratorAgent (in progress)
+   ↓
+Final media package
 ```
 ---
 
@@ -219,5 +218,10 @@ MIT License - free for personal and commercial use.
 
 **Kaggle × Google – Agents Intensive (Capstone Project)**
 *Applying multi-agent AI systems to solve real-world challenges in education.*
+
+---
+###  YouTube demo + Hugging Face Spaces live app
+[![YouTube Demo](https://img.shields.io/badge/YouTube-Demo-red?logo=youtube)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+[![Hugging Face Spaces](https://img.shields.io/badge/Hugging%20Face-Live%20Demo-yellow?logo=huggingface)]((https://huggingface.co/spaces/cwattsnogueira/tinytutor))
 
 ---
