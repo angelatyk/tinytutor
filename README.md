@@ -1,4 +1,4 @@
-# 🎓 TinyTutor - Agentic AI Educational Media Generator
+# 🎓 TinyTutor - Agentic AI–Powered Educational Media Generator
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![Google Cloud](https://img.shields.io/badge/Google%20Cloud-TTS%20%26%20Gemini-orange.svg)](https://cloud.google.com/)
