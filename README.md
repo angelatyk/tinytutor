@@ -106,12 +106,12 @@ Produces storyboards or simple animated sequences to match the narrative.
             │                                │
 ┌──────────────────────────────┐  ┌──────────────────────────────┐
 │   AudioScriptWriterAgent     │  │   VideoScriptWriterAgent     │
-└───────────────┬──────────────┘  └──────────────┬──────────────┘
+└───────────────┬──────────────┘  └──────────────┬───────────────┘
                 │                                 │
    ┌────────────▼─────────────┐     ┌─────────────▼──────────────┐
-   │    AudioGeneratorAgent   │     │    VideoGeneratorAgent      │
+   │    AudioGeneratorAgent   │     │    VideoGeneratorAgent     │
    └──────────────┬───────────┘     └──────────────┬─────────────┘
-                  └──────────────┬──────────────────┘
+                  └──────────────┬─────────────────┘
                                  ▼
                     Final Media Package
 ```
