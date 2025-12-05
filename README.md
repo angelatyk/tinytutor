@@ -16,7 +16,7 @@ Kaggle × Google AI Agents Intensive Course - Capstone Project
 </div>
 
 <div align="center">
-  <img src="logo.png" width="420" alt="TinyTutor Logo"/>
+  <img src="/images/logo.png" width="420" alt="TinyTutor Logo"/>
 </div>
 
 ### 📖 Overview
@@ -46,7 +46,7 @@ TinyTutor investigates whether a **role-specialized agentic pipeline** can meet 
 TinyTutor - Demo Screenshot
 </div>
 <div align="center">
-<img src="screenapp.png" width="420" alt="TinyTutor Logo"/>
+<img src="/images/screenapp.png" width="420" alt="TinyTutor Logo"/>
 </div>
 
 ---
