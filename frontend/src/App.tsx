@@ -1,35 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+    <div className="min-h-screen bg-gradient-to-br from-sky-50 via-white to-amber-50 font-sans text-slate-800">
+      
+      {/* Header Section */}
+      <header className="pt-10 pb-8 px-4 text-center">
+        <div className="flex items-center justify-center gap-4 mb-4">
+          <div className="w-20 h-20 bg-amber-300 rounded-full flex items-center justify-center text-5xl shadow-lg border-4 border-white transform hover:scale-110 transition-transform cursor-pointer">
+            🦉
+          </div>
+        </div>
+        
+        <h1 className="text-5xl md:text-6xl font-black text-slate-800 mb-2 tracking-tight">
+          Tiny<span className="text-teal-500">Tutor</span>
+        </h1>
+        
+        <p className="text-lg text-slate-500 font-semibold max-w-xl mx-auto flex items-center justify-center gap-2">
+          <span className="w-5 h-5 text-amber-400">🎓</span>
+          AI Agentic Educational Media Generator
         </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+      </header>
+    </div>
+  );
 }
 
-export default App
+export default App;
