@@ -27,7 +27,7 @@ const TopicInput: React.FC<TopicInputProps> = ({
 
 	return (
 		<div className="mb-12 max-w-3xl mx-auto">
-			<div className="bg-white rounded-3xl p-3 shadow-xl shadow-slate-200/50 border border-slate-300">
+			<div className="bg-white rounded-3xl p-3 shadow-xl shadow-slate-300 border border-slate-300">
 				<div className="flex flex-col sm:flex-row gap-2">
 					{/* Input Field */}
 					<input
@@ -35,7 +35,7 @@ const TopicInput: React.FC<TopicInputProps> = ({
 						value={topic}
 						onChange={(e) => setTopic(e.target.value)}
 						placeholder="What do you want to learn today?"
-						className="flex-1 px-6 py-4 text-lg rounded-2xl border-2 border-slate-200 focus:border-amber-400 focus:outline-none bg-slate-50 focus:bg-white transition-all placeholder:text-slate-400"
+						className="flex-1 px-6 py-4 text-lg rounded-2xl border-2 border-slate-300 focus:border-amber-400 focus:outline-none bg-slate-50 focus:bg-white transition-all placeholder:text-slate-400"
 						disabled={isProcessing}
 						onKeyDown={handleKeyDown}
 					/>
