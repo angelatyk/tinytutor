@@ -14,10 +14,10 @@ const HomePage: React.FC = () => {
 	};
 
 	return (
-		<div className="min-h-screen bg-gradient-to-br from-sky-50 via-white to-amber-50 font-sans text-slate-800">
+		<div className="page-wrapper font-sans text-slate-800">
 			<Header />
-			<main className="container mx-auto px-4 pb-20 max-w-5xl">
-				<div className="mb-12 max-w-3xl mx-auto">
+			<main className="main-container">
+				<div className="content-box">
 					<TopicInput
 						topic={topic}
 						setTopic={setTopic}
