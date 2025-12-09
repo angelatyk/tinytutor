@@ -100,4 +100,25 @@ body {
   .suggestion-button-disabled {
     @apply opacity-50 cursor-not-allowed;
   }
+
+  /* Agent Card */
+  .agent-card {
+    @apply relative rounded-2xl border-2 transition-all duration-300;
+  }
+
+  .agent-card-icon {
+    @apply p-3 bg-white rounded-full shadow-sm;
+  }
+
+  .agent-card-title {
+    @apply font-bold text-lg text-slate-800;
+  }
+
+  .agent-card-role {
+    @apply text-xs uppercase tracking-wider font-bold opacity-70;
+  }
+
+  .agent-card-status {
+    @apply mt-2 min-h-[24px] flex items-center justify-center gap-2 font-medium text-sm;
+  }
 }

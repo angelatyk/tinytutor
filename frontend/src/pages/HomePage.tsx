@@ -1,11 +1,12 @@
 import React from "react";
+import AgentStatusGrid from "../components/AgentStatusGrid";
 import Header from "../components/Header";
 import SuggestionTopics from "../components/SuggestionTopics";
 import TopicInput from "../components/TopicInput";
 import { useLessonWorkflow } from "../hooks/useLessonWorkflow";
 
 const HomePage: React.FC = () => {
-	const { topic, setTopic, isProcessing, executeGeneration } =
+	const { topic, setTopic, isProcessing, executeGeneration, agents } =
 		useLessonWorkflow();
 
 	const handleSuggestionClick = (suggestion: string) => {
@@ -30,6 +31,8 @@ const HomePage: React.FC = () => {
 						disabled={isProcessing}
 					/>
 				</div>
+
+				<AgentStatusGrid agents={agents} />
 			</main>
 		</div>
 	);

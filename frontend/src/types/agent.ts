@@ -1,9 +1,16 @@
-export type AgentStatus = "IDLE" | "WORKING" | "COMPLETED" | "ERROR";
+export type AgentStatus =
+	| "IDLE"
+	| "THINKING"
+	| "WORKING"
+	| "COMPLETED"
+	| "ERROR";
+
+export type AgentRole = "writer" | "narrator" | "visualizer";
 
 export interface AgentState {
 	id: string;
 	name: string;
-	role: "writer" | "narrator" | "visualizer";
+	role: AgentRole;
 	status: AgentStatus;
 	message: string;
 }
